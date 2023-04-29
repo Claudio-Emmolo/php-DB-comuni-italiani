@@ -1,0 +1,14 @@
+p.message-img {
+    font-size: .8rem;
+}
+
+section#details {
+    border: 2px solid red;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.wiki-iframe {
+    height: 830px;
+    border: 2px solid black;
+}
