@@ -30,15 +30,18 @@ $filterProvincia = $_GET['provincia'];
         </div>
     </section>
 
-    <section id="table-db" class="my-5">
-        <table class="table table-hover table-bordered">
-            <h2 class="text-center text-uppercase">Lista Completa</h2>
 
+    <section id="table-db" class="my-5">
+        <h2 class="text-center text-uppercase">Lista Completa</h2>
+
+        <section id="search-form">
             <form action="./index.php" method="GET">
                 <input type="text" name="search" placeholder="Cerca per nome">
                 <input type="text" name="provincia" placeholder="Cerca per provincia">
                 <button class="btn btn-primary">Cerca</button>
             </form>
+        </section>
+        <table class="table table-hover table-bordered">
 
             <thead>
                 <tr>
