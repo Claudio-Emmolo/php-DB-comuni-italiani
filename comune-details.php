@@ -31,6 +31,7 @@ $cityImgList = $getImg['hits'];
     <!-- STYLES -->
     <link rel="stylesheet" href="./style/singlepage.css">
     <link rel="stylesheet" href="./style/general.css">
+    <link rel="stylesheet" href="./style/footer.css">
 </head>
 
 <body>
@@ -121,7 +122,9 @@ $cityImgList = $getImg['hits'];
 
         </div>
     </main>
-
+    <?php
+    @include __DIR__ . '/footer.php';
+    ?>
 </body>
 
 </html>
