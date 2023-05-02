@@ -26,12 +26,11 @@ $cityImgList = $getImg['hits'];
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo ($comune) ?></title>
     <!-- BOOTSTRAP -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <!-- STYLES -->
-    <link rel="stylesheet" href="./style/singlepage.css">
-    <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./styles/singlepage.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 </head>
 
 <body>
@@ -91,8 +90,7 @@ $cityImgList = $getImg['hits'];
                     <!-- WIKIPEDIA -->
                     <section id="wikipedia" class="my-3">
                         <h3>Secondo Wikipedia:</h3>
-                        <iframe src="https://it.m.wikipedia.org/wiki/<?php echo ($comuneData['nome']) ?>"
-                            frameborder="10" class="w-100 wiki-iframe"></iframe>
+                        <iframe src="https://it.m.wikipedia.org/wiki/<?php echo ($comuneData['nome']) ?>" frameborder="10" class="w-100 wiki-iframe"></iframe>
                     </section>
                 </div>
 
@@ -109,11 +107,9 @@ $cityImgList = $getImg['hits'];
                     <?php
                     foreach (array_slice($cityImgList, 0, 5) as $cityImg) {
                     ?>
-                    <div class="d-flex flex-column align-items-center">
-                        <img src="<?php echo ($cityImg['webformatURL']) ?>"
-                            alt="<?php echo ($comuneData['provincia']['nome']) ?> City Img's"
-                            class="mb-2 img-fluid w-100">
-                    </div>
+                        <div class="d-flex flex-column align-items-center">
+                            <img src="<?php echo ($cityImg['webformatURL']) ?>" alt="<?php echo ($comuneData['provincia']['nome']) ?> City Img's" class="mb-2 img-fluid w-100">
+                        </div>
                     <?php
                     }
                     ?>

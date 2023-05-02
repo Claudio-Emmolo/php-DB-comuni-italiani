@@ -23,9 +23,9 @@ $filterProvincia = $_GET['provincia'];
         integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- STYLES -->
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="stylesheet" href="./style/general.css">
-    <link rel="stylesheet" href="./style/footer.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/general.css">
+    <link rel="stylesheet" href="./styles/footer.css">
 
 </head>
 
